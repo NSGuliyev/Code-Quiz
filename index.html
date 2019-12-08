@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Assets/scc/style.css">
     <title>Code Quiz</title>
 </head>
 
@@ -60,26 +60,41 @@
                     <h4>ALL DONE!</h4>
                     <h5>You have answer<span id="answerId"></span>correctly.</h5>
                     <div>
-                        <form>
-
+                        <form class="form-inline">
+                            <div class="form-group mb-2">
+                                <label for="inputPassword2" class="sr-only">Please Enter your initials</label>
+                                <input type="text" class="form-control" id="initialsInput" placeholder="Initials">
+                            </div>
+                            <button type="submit" class="btn btn-dark btn-block my-2" id="addInitialsId">Add
+                                Initials</button>
                         </form>
-
                     </div>
                 </div>
-
             </div>
-
         </div>
 
 
+        <div id="highScoreWrapper" class="hideClass">
+            <div class="row justify-content-center">
+                <div class="col-sm-e listOfScores">
+                </div>
+            </div>
 
 
-
-
+            <div class="row justify-content-center">
+                <div class="col-sm-4">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn-dark mr-4" id="goBackBtn">Go Back</button>
+                        <button type="button" class="btn-dark ml-5" id="clearBtn">Clear High scores</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
-
+    <script src="Assets/JavaScript/questions.js"></script>
+    <script src="Assets/JavaScript/script.js"></script>
 
 </body>
 

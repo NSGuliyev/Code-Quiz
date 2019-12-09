@@ -1,0 +1,1 @@
+var questionBtns = document.querySelector(".buttonQuestions .col-sm-3");

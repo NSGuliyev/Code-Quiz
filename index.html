@@ -1,31 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="Assets/scc/style.css">
+    <link rel="stylesheet" href="Assets/Style/style.css">
     <title>Code Quiz</title>
 </head>
 
 <body>
-    <header class="navbar-light bg-light my-5 botder-bottom">
+    <header class="navbar-light bg-light my-4 border-bottom">
         <div class="row">
             <div class="col-sm-6 justify-content-left">
-                <button type="button" class="btn btn-dark ml-5" id="viewHighScoreBtn">View High Scores</button>
+                <button type="button" class="btn btn-dark ml-5" id="viewHighscoreBtn">View Highscores</button>
             </div>
             <div class="col-sm-6 text-right">
-                <p>Time Left: <span class="mr-5" id="timerSpan">00</span></p>
+                <p>Time Left: <span class="mr-5" id="timerSpan">00:00</span></p>
             </div>
         </div>
     </header>
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <h1 class="text-center">Code Quiz</h1>
                 <button type="button" class="btn btn-dark btn-block startBtn mt-5">Start</button>
             </div>
@@ -33,39 +35,35 @@
 
 
         <div id="questionsWrapper">
-
             <div class="row justify-content-center">
-                <div class="col-sm-3" id="questionDiv">
-                    <!-- Questions will be created here -->
+                <div class="col-sm-4" id="questionDiv">
+                    <!-- dynamicaly created questions -->
                 </div>
             </div>
-
             <div class="row justify-content-center buttonQuestions hideClass">
                 <div class="col-sm-3">
-                    <!-- Ansers will be created here -->
+                    <!-- dynamicaly created answer buttons -->
                 </div>
             </div>
-
             <div class="row justify-content-center">
-                <div class="col-sm-4" id="answerCheckDiv">
-                    <!-- Right or Wrong answer will appear here -->
+                <div class="col-sm-3" id="answerCheckDiv">
+                    <!-- dynamicaly created right or wrong answers -->
                 </div>
             </div>
         </div>
 
-
         <div id="scoreWrapper" class="hideClass">
             <div class="row justify-content-center">
                 <div class="col-sm-4">
-                    <h4>ALL DONE!</h4>
-                    <h5>You have answer<span id="answerId"></span>correctly.</h5>
+                    <h4></h4>
+                    <h5>You have answered<span id="answerId"></span>questions ccorrectly.</h5>
                     <div>
                         <form class="form-inline">
                             <div class="form-group mb-2">
-                                <label for="inputPassword2" class="sr-only">Please Enter your initials</label>
-                                <input type="text" class="form-control" id="initialsInput" placeholder="Initials">
+                                <label for="inputPassword2" class="sr-only"></label>
+                                <input type="text" class="form-control" id="intialsInput" placeholder="Initials">
                             </div>
-                            <button type="submit" class="btn btn-dark btn-block my-2" id="addInitialsId">Add
+                            <button type="submit" class="btn btn-dark mb-2 ml-2" id="addInitialsId">Add
                                 Initials</button>
                         </form>
                     </div>
@@ -73,20 +71,16 @@
             </div>
         </div>
 
-
         <div id="highScoreWrapper" class="hideClass">
             <div class="row justify-content-center">
-                <div class="col-sm-e listOfScores">
-                    <h1>listOfScores</h1>
+                <div class="col-sm-3 listOfScores">
                 </div>
             </div>
-
-
             <div class="row justify-content-center">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn-dark mr-5" id="goBackBtn">Go Back</button>
-                        <button type="button" class="btn-dark ml-5" id="clearBtn">Clear High scores</button>
+                        <button type="button" class="btn btn-dark mr-3" id="goBackBtn">Go Back</button>
+                        <button type="button" class="btn btn-dark" id="clearBtn">Clear Highscores</button>
                     </div>
                 </div>
             </div>
@@ -96,7 +90,6 @@
 
     <script src="Assets/JavaScript/questions.js"></script>
     <script src="Assets/JavaScript/script.js"></script>
-
 </body>
 
 </html>
